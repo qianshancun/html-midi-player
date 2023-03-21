@@ -18,15 +18,20 @@
   <body>
     <h1><a href="https://github.com/cifkao/html-midi-player">HTML MIDI Player</a></h1>
 
-    <midi-player src="https://cdn.jsdelivr.net/gh/cifkao/html-midi-player@2b12128/jazz.mid" sound-font loop visualizer=".visualizer" id="player1"></midi-player>
-    <midi-player src="https://cdn.jsdelivr.net/gh/cifkao/html-midi-player@2b12128/twinkle_twinkle.mid" visualizer=".visualizer" id="player2"></midi-player>
+    <h2>消愁 毛不易</h2>
+    <div><midi-player src="./dist/lib/xiaochou.mid" sound-font loop visualizer=".visualizer" id="player1"></midi-player></div>
+    <h2>一闪一闪亮晶晶</h2>
+    <div><midi-player src="https://cdn.jsdelivr.net/gh/cifkao/html-midi-player@2b12128/twinkle_twinkle.mid" visualizer=".visualizer" id="player2"></midi-player></div>
+    <h2>加州旅馆</h2>
+    <div><midi-player src="./dist/lib/hotel.mid" sound-font loop visualizer=".visualizer" id="player3"></midi-player></div>
+
 
     <midi-visualizer type="piano-roll" class="visualizer" id="pianoRollVisualizer"></midi-visualizer>
     <midi-visualizer type="waterfall" class="visualizer" id="waterfallVisualizer"></midi-visualizer>
     <midi-visualizer type="staff" class="visualizer" id="staffVisualizer"></midi-visualizer>
-
+<!-- 
     <midi-player src="https://cdn.jsdelivr.net/gh/cifkao/html-midi-player@2b12128/notfound.mid" sound-font></midi-player>
-    <midi-player sound-font></midi-player>
+    <midi-player sound-font></midi-player> -->
 
     <script>
       window.addEventListener('DOMContentLoaded', function() {
